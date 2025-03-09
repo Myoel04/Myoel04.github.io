@@ -1,0 +1,48 @@
+.sobremi {
+  padding: 20px;
+  background-color: #f0f0f0;
+  color: #333333;
+  margin: 20px auto;
+  max-width: 1800px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif;
+}
+
+.sobremi-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sobremi-image {
+  flex: 1;
+  padding-right: 20px;
+  text-align: center; /* Centra la imagen si es más pequeña que el espacio disponible */
+}
+
+.sobremi-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Opcional: si quieres bordes redondeados en la imagen */
+}
+
+.sobremi-text {
+  flex: 3;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .sobremi-content {
+    flex-direction: column;
+  }
+
+  .sobremi-image {
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+
+  .sobremi-text {
+    text-align: center;
+  }
+}

@@ -1,0 +1,83 @@
+/* Estilos globales */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #f0f0f0; /* Fondo general en gris claro */
+    color: #333; /* Color de texto general en gris oscuro */
+    overflow-x: hidden;
+}
+
+/* Separador de sección */
+.section-separator {
+    height: 2px; /* Altura del separador */
+    background-color: darkgreen; /* Color del separador */
+    width: 100%; /* Ancho completo */
+    margin: 40px 0; /* Margen vertical para separación */
+}
+
+/* Estilos adicionales */
+.skills {
+    background-color: #e6e8ea;
+    color: #4b8e4b;
+    text-align: center;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.skill-card {
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (max-width: 768px) {
+    .skill-card {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+.App {
+    background-color: #4b8e4b;
+    color: #c9d1d9;
+}
+
+.topbar, .inicio, .contacto {
+    background-color: #4b8e4b;
+    color: #fff;
+}
+
+.nav-links a {
+    color: white;
+    &:hover {
+        color: #ffd700;
+    }
+}
+
+section {
+    background-color: #f0f0f0;
+}

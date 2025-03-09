@@ -1,0 +1,47 @@
+.inicio {
+background-color: #c9d1d9;
+  color: #c9d1d9;
+  height: 100vh;
+  display: flex;
+  flex-direction: row; // Cambiado de column a row
+  align-items: center; // Alinea verticalmente
+  justify-content: center; // Alinea horizontalmente
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+
+
+  .text-container {
+    flex: 1;
+    text-align: left; // Alinea el texto a la izquierda
+    padding-left: 8%; // Espacio desde el borde izquierdo
+    font-size: 40px;
+  }
+h1{
+  color: #f4f4f4;
+
+}
+  .graphic-container {
+    flex: 1;
+    position: relative;
+    width: 50%; // Ajusta según necesites
+    height: 100%;
+    background-image: url('../../imagenes/desarrollador.png'); // Actualiza esta ruta con tu imagen
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column; // Vuelve a column para dispositivos móviles
+    .text-container, .graphic-container {
+      width: 100%;
+      padding: 0 20px;
+      text-align: center;
+    }
+    .graphic-container {
+      order: -1; // Pone la imagen arriba en móviles
+    }
+  }
+}
