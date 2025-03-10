@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/sobremi.scss';
-import imagenPerfil from '../../imagenes/sobre.png'; // Asegúrate de importar tu imagen
+import imagenPerfil from '../imagenes/sobre.png'; // Asegúrate de importar tu imagen
 
 function SobreMi() {
     return (

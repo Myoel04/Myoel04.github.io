@@ -1,11 +1,12 @@
 import React from 'react';
-import TopBar from './Myoel04.github.io/components/TopBar';
-import Inicio from './Myoel04.github.io/components/Inicio';
-import SobreMi from './Myoel04.github.io/components/sobremi';
-import Proyectos from './Myoel04.github.io/components/proyectos';
-import Skills from './Myoel04.github.io/components/skills';
-import Contacto from './Myoel04.github.io/components/contacto';
+import TopBar from './components/TopBar'; // Esta ya está correcta
+import Inicio from './components/Inicio';
+import SobreMi from './components/sobremi';
+import Proyectos from './components/proyectos';
+import Skills from './components/skills';
+import Contacto from './components/contacto';
 import './App.css';
+
 
 function App() {
     return (

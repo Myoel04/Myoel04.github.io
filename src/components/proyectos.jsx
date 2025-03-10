@@ -6,19 +6,19 @@ function Proyectos() {
         {
             name: "RECM",
             description: "Aplicación de recetas de comida hecha en Kotlin y con bases de datos en Firebase Google.",
-            image: require("../../imagenes/recmLogo.png"), // Ruta relativa
+            image: require("../imagenes/recmLogo.png"), // Ruta relativa
             githubLink: "https://github.com/Myoel04/Recmm.git"
         },
         {
             name: "Proyecto MVC",
             description: "Proyecto de gestión de coches con interfaz y bases de datos.",
-            image: require("../../imagenes/proyectomvc.jpg"), // Ruta relativa
+            image: require("../imagenes/proyectomvc.jpg"), // Ruta relativa
             githubLink: "https://github.com/Myoel04/ProyectoMVC.git"
         },
         {
             name: "PajaroVolador",
             description: "Juego de un pájaro volador, se trata de esquivar tuberías a medida que va corriendo el pájaro en la pantalla.",
-            image: require("../../imagenes/pajaroicono.png"), // Ruta relativa
+            image: require("../imagenes/pajaroicono.png"), // Ruta relativa
             githubLink: "https://github.com/Myoel04/FlappyBird-Maikel.git"
         }
     ];
