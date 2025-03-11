@@ -38,7 +38,7 @@ function Inicio() {
     return (
         <div className="inicio" id="inicio">
             <div className="text-container">
-                <h1>Soy Maikel</h1>
+                <h1>Myoel04.github.io</h1>
                 <h2 className="typewriter">
                     {text}
                     <span className="cursor">{blink ? '|' : ' '}</span>
