@@ -4,7 +4,7 @@ import imagenPerfil from '../imagenes/sobre.png'; // Asegúrate de importar tu i
 
 function SobreMi() {
     return (
-        <div className="sobremi">
+        <div className="sobremi" id="sobremi">
             <div className="sobremi-content">
                 <div className="sobremi-image">
                     <img src={imagenPerfil} alt="Maikel Yoel" />

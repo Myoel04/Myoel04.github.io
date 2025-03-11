@@ -2,9 +2,8 @@ import React, { useState, useEffect } from 'react';
 import '../styles/Inicio.scss';
 
 const roles = [
-    "Desarrollador Java |",
-    "Desarrollador de videojuegos |",
-    "Desarrollador web"
+    "Desarrollador Java |Desarrollador de videojuegos | Desarrollador web",
+
 ];
 
 function Inicio() {
@@ -38,7 +37,7 @@ function Inicio() {
     return (
         <div className="inicio" id="inicio">
             <div className="text-container">
-                <h1>Myoel04.github.io</h1>
+                <h1>Hola, Soy Maikel</h1>
                 <h2 className="typewriter">
                     {text}
                     <span className="cursor">{blink ? '|' : ' '}</span>

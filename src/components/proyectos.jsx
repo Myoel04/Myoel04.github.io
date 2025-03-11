@@ -11,7 +11,7 @@ function Proyectos() {
         },
         {
             name: "Proyecto MVC",
-            description: "Proyecto de gestión de coches con interfaz y bases de datos.",
+            description: "Proyecto de gestión de coches con combinación de java y bases de datos. Gestiona como quieras en mi app tus coches y sus dueños.",
             image: require("../imagenes/proyectomvc.jpg"), // Ruta relativa
             githubLink: "https://github.com/Myoel04/ProyectoMVC.git"
         },

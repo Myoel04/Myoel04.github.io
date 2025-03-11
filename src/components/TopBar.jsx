@@ -18,7 +18,7 @@ function TopBar() {
 
     return (
         <nav className="topbar" style={{ opacity }}>
-            <div className="logo">Maikel Yoel</div>
+            <div className="logo">Myoel04.github.io</div>
             <div className="menu-icon" onClick={() => setIsOpen(!isOpen)}>
                 <IoMdMenu size={30} color="white" />
             </div>
