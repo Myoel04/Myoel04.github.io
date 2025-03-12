@@ -1,9 +1,9 @@
+/* Estilos para la sección Sobre Mí */
 .sobremi {
   padding: 20px;
-  background-color: #f0f0f0;
-  color: #333333;
-  margin: 20px auto;
-  max-width: 1800px;
+  background-color: #EDF1D6; /* Verde claro de la paleta */
+  color: #40513B; /* Verde oscuro para el texto */
+  width: 100%; /* Ancho total */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   font-family: 'Arial', sans-serif;
@@ -13,18 +13,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%; /* Asegura que ocupe el ancho total */
+  max-width: 1200px; /* Límite máximo para evitar que se extienda demasiado en pantallas grandes */
+  margin: 0 auto; /* Centra el contenido si está dentro del límite */
 }
 
 .sobremi-image {
   flex: 1;
   padding-right: 20px;
-  text-align: center; /* Centra la imagen si es más pequeña que el espacio disponible */
+  text-align: center;
 }
 
 .sobremi-image img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px; /* Opcional: si quieres bordes redondeados en la imagen */
+  border-radius: 50%; /* Mantengo el círculo para un look moderno */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  background: none; /* Sin fondo adicional */
+  transition: transform 0.3s ease; /* Transición para interacción */
+}
+
+.sobremi-image img:hover {
+  transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
 }
 
 .sobremi-text {
@@ -35,6 +45,7 @@
 @media (max-width: 768px) {
   .sobremi-content {
     flex-direction: column;
+    padding: 0 10px; /* Reducimos padding en móviles */
   }
 
   .sobremi-image {
@@ -44,5 +55,12 @@
 
   .sobremi-text {
     text-align: center;
+    padding: 0 10px; /* Añadimos padding lateral en móviles */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .sobremi-content {
+    padding: 0 20px; /* Ajuste para tablets */
   }
 }

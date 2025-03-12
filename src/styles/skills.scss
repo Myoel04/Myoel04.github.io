@@ -1,20 +1,25 @@
 .skills {
-  padding: 40px;
-  color: #333333;
-  margin: 20px auto;
-  max-width: 960px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 40px 20px; /* Padding horizontal para móviles */
+  background-color: #EDF1D6 !important; /* Fondo claro igual que "Sobre Mí", con !important para evitar conflictos */
+  color: #40513B; /* Texto en verde oscuro */
+  width: 100%; /* Ancho total */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Misma sombra que "Sobre Mí" */
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   text-align: center;
 }
 
+.skills-content {
+  max-width: 1200px; /* Límite máximo como en "Sobre Mí" */
+  margin: 0 auto; /* Centrado en pantallas grandes */
+  width: 100%;
+}
+
 .skill-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 20px;
-  padding: 40px;
+  gap: 30px; /* Más espacio entre elementos */
+  padding: 20px 0; /* Padding interno */
 }
 
 .skill-grid div {
@@ -27,19 +32,49 @@
     transform: scale(1.1);
   }
 }
+
 h1 {
-  color: darkgreen;
+  color: #40513B; /* Verde oscuro para el título */
   font-size: 40px;
+  margin-bottom: 20px; /* Espacio debajo del título */
 }
 
 .stars {
   color: gold;
-  font-size: 40px;
+  font-size: 24px; /* Tamaño más manejable para las estrellas */
+  margin: 10px 0; /* Espacio arriba y abajo de las estrellas */
+}
+
+.skill-name {
+  font-size: 16px; /* Nombre de la habilidad */
+  color: #609966; /* Verde medio para diferenciar */
+  margin-top: 5px;
 }
 
 @media (max-width: 768px) {
+  .skills {
+    padding: 20px 10px; /* Menos padding en móviles */
+  }
+
+  .skill-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Menos ancho por columna en móviles */
+    gap: 20px; /* Espacio reducido en móviles */
+    padding: 10px 0;
+  }
+
   .skill-grid div {
-    padding: 10px;
-    font-size: 0.9rem;
+    padding: 5px;
+  }
+
+  h1 {
+    font-size: 30px; /* Título más pequeño en móviles */
+  }
+
+  .stars {
+    font-size: 20px; /* Estrellas más pequeñas en móviles */
+  }
+
+  .skill-name {
+    font-size: 14px; /* Nombre más pequeño en móviles */
   }
 }

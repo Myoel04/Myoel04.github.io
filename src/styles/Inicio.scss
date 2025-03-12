@@ -1,6 +1,6 @@
 .inicio {
-background-color: #c9d1d9;
-  color: #c9d1d9;
+  background-color: #40513B; /* Verde oscuro para un contraste elegante */
+  color: #EDF1D6; /* Verde claro para el texto, mejor contraste */
   height: 100vh;
   display: flex;
   flex-direction: row; // Cambiado de column a row
@@ -10,17 +10,17 @@ background-color: #c9d1d9;
   overflow: hidden;
   width: 100%;
 
-
   .text-container {
     flex: 1;
     text-align: left; // Alinea el texto a la izquierda
     padding-left: 8%; // Espacio desde el borde izquierdo
     font-size: 40px;
   }
-h1{
-  color: #f4f4f4;
 
-}
+  h1 {
+    color: #EDF1D6; /* Ajustamos el color del h1 para que sea visible */
+  }
+
   .graphic-container {
     flex: 1;
     position: relative;

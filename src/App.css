@@ -62,14 +62,17 @@ html, body {
 }
 
 .App {
-    background-color: #4b8e4b;
+    background-color: #40513B;
     color: #c9d1d9;
 }
 
-.topbar, .inicio, .contacto {
-    background-color: #4b8e4b;
+
+.inicio {
+
     color: #fff;
 }
+
+
 
 .nav-links a {
     color: white;

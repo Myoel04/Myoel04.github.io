@@ -5,7 +5,8 @@ function Proyectos() {
     const projects = [
         {
             name: "RECM",
-            description: "Aplicación de recetas de comida hecha en Kotlin y con bases de datos en Firebase Google.",
+            description: "Aplicación de recetas de comida hecha en Kotlin y con bases de datos en Firebase Google, en ella puedes " +
+                "crear, borrar, editar, actualizar tus propias recetas de comida y ver las recetas de los demás..",
             image: require("../imagenes/recmLogo.png"), // Ruta relativa
             githubLink: "https://github.com/Myoel04/Recmm.git"
         },

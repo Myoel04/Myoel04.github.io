@@ -14,13 +14,13 @@ function App() {
             <TopBar />
             <main className="main-content">
                 <Inicio id="Inicio" />
-                <div className="section-separator"></div>
+
                 <SobreMi id="sobremi" />
-                <div className="section-separator"></div>
+
                 <Proyectos id="proyectos" />
-                <div className="section-separator"></div>
+
                 <Skills id="skills" />
-                <div className="section-separator"></div>
+
                 <Contacto id="contacto" />
             </main>
         </div>

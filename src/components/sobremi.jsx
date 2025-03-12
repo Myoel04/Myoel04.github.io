@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/sobremi.scss';
-import imagenPerfil from '../imagenes/sobre.png'; // Asegúrate de importar tu imagen
+import imagenPerfil from '../imagenes/sobre.png'; // Asegúrate de que esta imagen tenga fondo transparente
 
 function SobreMi() {
     return (
@@ -11,13 +11,9 @@ function SobreMi() {
                 </div>
                 <div className="sobremi-text">
                     <h1>Sobre Mí</h1>
-                    <p>Hola, soy Maikel Yoel, un apasionado Desarrollador con experiencia en la creación de aplicaciones
-                        multiplataforma.</p>
-                    <p>Graduado en DAM (Desarrollo de Aplicaciones Multiplataforma). Si buscas a alguien comprometido,
-                        con habilidades </p>
+                    <p>Hola, soy Maikel Yoel, un apasionado Desarrollador con experiencia en la creación de aplicaciones multiplataforma.</p>
+                    <p>Graduado en DAM (Desarrollo de Aplicaciones Multiplataforma). Si buscas a alguien comprometido, con habilidades </p>
                     <p>y técnicas sólidas, estoy siempre en la búsqueda de nuevos retos que me permitan crecer profesionalmente.</p>
-
-
                 </div>
             </div>
         </div>
