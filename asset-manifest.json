@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3c04755b.css",
+    "main.js": "/static/js/main.ece1121c.js",
+    "static/media/desarrollador.png": "/static/media/desarrollador.21c90fc843d08c455282.png",
+    "static/media/pajaroicono.png": "/static/media/pajaroicono.bd6a7d563218629aebb0.png",
+    "static/media/sobre.png": "/static/media/sobre.96d6bd3db22e64b249ce.png",
+    "static/media/proyectomvc.jpg": "/static/media/proyectomvc.4cd3ccb96e4f8b66a123.jpg",
+    "static/media/MaikelCV.pdf": "/static/media/MaikelCV.65ae594c999e55a7007a.pdf",
+    "static/media/recmLogo.png": "/static/media/recmLogo.e24538721890e958f380.png",
+    "index.html": "/index.html",
+    "main.3c04755b.css.map": "/static/css/main.3c04755b.css.map",
+    "main.ece1121c.js.map": "/static/js/main.ece1121c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c04755b.css",
+    "static/js/main.ece1121c.js"
+  ]
+}
