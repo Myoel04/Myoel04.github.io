@@ -1,66 +1,125 @@
 /* Estilos para la sección Sobre Mí */
 .sobremi {
-  padding: 20px;
+  padding: 40px 20px; /* Increased padding for better breathing room */
   background-color: #EDF1D6; /* Verde claro de la paleta */
   color: #40513B; /* Verde oscuro para el texto */
   width: 100%; /* Ancho total */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   font-family: 'Arial', sans-serif;
+  box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
 .sobremi-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%; /* Asegura que ocupe el ancho total */
-  max-width: 1200px; /* Límite máximo para evitar que se extienda demasiado en pantallas grandes */
-  margin: 0 auto; /* Centra el contenido si está dentro del límite */
+  width: 100%;
+  max-width: 1200px; /* Max width for larger screens */
+  margin: 0 auto; /* Center the content */
+  gap: 30px; /* Add spacing between image and text */
 }
 
 .sobremi-image {
   flex: 1;
-  padding-right: 20px;
   text-align: center;
+  min-width: 200px; /* Ensure image doesn’t shrink too much */
+  max-width: 300px; /* Limit image width on larger screens */
 }
 
 .sobremi-image img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  border-radius: 50%; /* Mantengo el círculo para un look moderno */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  background: none; /* Sin fondo adicional */
-  transition: transform 0.3s ease; /* Transición para interacción */
+  border-radius: 50%; /* Circular image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: none;
+  transition: transform 0.3s ease;
 }
 
 .sobremi-image img:hover {
-  transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+  transform: scale(1.05);
 }
 
 .sobremi-text {
-  flex: 3;
-  text-align: justify;
+  flex: 2; /* Give more space to text */
+  text-align: left; /* Align text to the left for better readability */
+  max-width: 600px; /* Limit text width for readability on large screens */
 }
 
+.sobremi-text h1 {
+  font-size: 2rem; /* Larger heading for desktop */
+  margin-bottom: 20px; /* Space below the heading */
+  font-weight: 600; /* Slightly bolder for emphasis */
+}
+
+.sobremi-text p {
+  font-size: 1.1rem; /* Slightly larger font for readability */
+  line-height: 1.6; /* Improve line spacing for readability */
+  margin: 0; /* Remove default margins */
+}
+
+/* Mobile screens (up to 768px) */
 @media (max-width: 768px) {
+  .sobremi {
+    padding: 30px 15px; /* Slightly reduced padding for mobile */
+  }
+
   .sobremi-content {
     flex-direction: column;
-    padding: 0 10px; /* Reducimos padding en móviles */
+    gap: 20px; /* Reduced gap for mobile */
   }
 
   .sobremi-image {
-    padding-right: 0;
-    padding-bottom: 20px;
+    max-width: 200px; /* Smaller image on mobile */
+  }
+
+  .sobremi-image img {
+    max-height: 200px; /* Limit image height on mobile */
   }
 
   .sobremi-text {
-    text-align: center;
-    padding: 0 10px; /* Añadimos padding lateral en móviles */
+    max-width: 100%; /* Full width on mobile */
+    text-align: left;
+  }
+
+  .sobremi-text h1 {
+    font-size: 1.5rem; /* Smaller heading on mobile */
+    margin-bottom: 15px;
+  }
+
+  .sobremi-text p {
+    font-size: 1rem; /* Slightly smaller font for mobile */
+    line-height: 1.5;
   }
 }
 
-@media (min-width: 769px) and (max-width: 1200px) {
+/* Tablet screens (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
   .sobremi-content {
-    padding: 0 20px; /* Ajuste para tablets */
+    gap: 25px; /* Slightly smaller gap for tablets */
+    padding: 0 20px;
+  }
+
+  .sobremi-image {
+    max-width: 250px; /* Adjust image size for tablets */
+  }
+
+  .sobremi-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .sobremi-text p {
+    font-size: 1.05rem;
+  }
+}
+
+/* Larger screens (above 1200px) */
+@media (min-width: 1201px) {
+  .sobremi-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .sobremi-text p {
+    font-size: 1.2rem;
   }
 }

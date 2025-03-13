@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../styles/Inicio.scss';
 
 const roles = [
-    "Desarrollador Java |Desarrollador de videojuegos | Desarrollador web",
-
+    "Desarrollador Java | Desarrollador de videojuegos | Desarrollador web",
 ];
 
 function Inicio() {
@@ -43,7 +42,7 @@ function Inicio() {
                     <span className="cursor">{blink ? '|' : ' '}</span>
                 </h2>
             </div>
-            <div className="graphic-container"></div> {/* Actualiza la ruta de la imagen aquí */}
+            <div className="graphic-container"></div> {/* Ensure the image path is correct */}
         </div>
     );
 }

@@ -7,7 +7,7 @@ import MaikelCV from '../imagenes/MaikelCV.pdf';
 function Contacto() {
     return (
         <div className="contacto" id="contacto">
-            <h1 className="contact-title">¡Hablemos!</h1>
+            <h1 className="contact-title">¿Hablamos?</h1>
             <p className="contact-intro">
                 Estoy disponible para colaborar en proyectos ilusionantes y potenciales. Si quieres contar conmigo te dejo mis datos:
             </p>

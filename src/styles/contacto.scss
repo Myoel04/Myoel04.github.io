@@ -66,6 +66,8 @@
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  width: 150px; /* Fixed width to match both buttons */
+  text-align: center; /* Center the text within the button */
 }
 
 .botonCv:hover, .botonMensaje:hover {
@@ -107,7 +109,7 @@
 
   .botonCv, .botonMensaje {
     width: 100%;
-    max-width: 160px; /* Ancho máximo ajustado */
+    max-width: 150px; /* Ancho máximo ajustado to match desktop */
     padding: 8px 15px; /* Padding reducido */
     margin: 0 auto 5px; /* Centrado con margen inferior */
   }

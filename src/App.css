@@ -8,14 +8,30 @@ html, body {
     background-color: #f0f0f0; /* Fondo general en gris claro */
     color: #333; /* Color de texto general en gris oscuro */
     overflow-x: hidden;
+    font-family: 'Arial', sans-serif; /* Consistent font family */
+}
+
+/* Main content container */
+.main-content {
+    padding: 20px; /* Add padding around the entire main content */
+    box-sizing: border-box;
 }
 
 /* Separador de sección */
 .section-separator {
-    height: 2px; /* Altura del separador */
-    background-color: darkgreen; /* Color del separador */
-    width: 100%; /* Ancho completo */
-    margin: 40px 0; /* Margen vertical para separación */
+    height: 3px; /* Slightly thicker for better visibility */
+    background: linear-gradient(
+            to right,
+            transparent 0%,
+            #609966 20%, /* Darker green */
+            #9DC08B 50%, /* Lighter green */
+            #609966 80%,
+            transparent 100%
+    ); /* Gradient effect for a modern look */
+    width: 80%; /* Slightly shorter than full width for aesthetics */
+    max-width: 800px; /* Limit width on large screens */
+    margin: 40px auto; /* Center the separator with vertical spacing */
+    opacity: 0.8; /* Subtle transparency */
 }
 
 /* Estilos adicionales */
@@ -37,6 +53,8 @@ html, body {
     gap: 20px;
     padding: 0 20px;
     width: 100%;
+    max-width: 1200px; /* Limit grid width */
+    margin: 0 auto;
 }
 
 .skill-card {
@@ -59,28 +77,42 @@ html, body {
         padding: 10px;
         font-size: 0.9rem;
     }
+
+    .section-separator {
+        margin: 30px auto; /* Reduced margin on mobile */
+        width: 90%; /* Slightly wider on mobile for better fit */
+    }
 }
 
 .App {
     background-color: #40513B;
     color: #c9d1d9;
+    min-height: 100vh; /* Ensure the app takes full height */
+    display: flex;
+    flex-direction: column;
 }
-
 
 .inicio {
-
     color: #fff;
+    background-color: #40513B; /* Match the App background for a seamless look */
 }
-
-
 
 .nav-links a {
     color: white;
-    &:hover {
-        color: #ffd700;
-    }
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffd700;
 }
 
 section {
     background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 40px 20px; /* Consistent padding for all sections */
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px; /* Limit section width on large screens */
+    margin: 0 auto; /* Center sections */
 }
